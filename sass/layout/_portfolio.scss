@@ -1,0 +1,54 @@
+.filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  gap: 8px;
+}
+
+.filter__label {
+  padding: 6px 22px;
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  cursor: pointer;
+
+  color: $SecondaryTextColor;
+  background-color: $PrimaryBackground;
+  border-color: transparent;
+  border-radius: 4px;
+
+  transition: background-color $TransitionFunc, color $TransitionFunc;
+
+  &:hover,
+  &:focus {
+    color: $TertiaryTextColor;
+  }
+
+  .filter__input:checked + & {
+    background-color: $PrimaryAccentColor;
+    color: $TertiaryTextColor;
+  }
+}
+
+.filter__input {
+  position: absolute;
+  appearance: none;
+}
+
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.portfolio__item {
+  width: calc((100% - 60px) / 3);
+
+  background-color: $TertiaryTextColor;
+  color: $PrimaryTextColor;
+}

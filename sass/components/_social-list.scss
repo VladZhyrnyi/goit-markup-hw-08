@@ -1,0 +1,36 @@
+.social-list {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+// .social-list__item {
+// }
+
+.social-list__link {
+  @include flex-centered();
+  @include round(44px);
+
+  color: $PrimaryBorderColor;
+
+  transition: background-color $TransitionFunc, color $TransitionFunc;
+
+  &:hover,
+  &:focus {
+    color: $TertiaryTextColor;
+    background-color: $PrimaryAccentColor;
+  }
+
+  &--transparent {
+      color: $TertiaryTextColor;
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+}
+
+.social-list__icon {
+  display: block;
+  height: 20px;
+  width: 20px;
+
+  fill: currentColor;
+}

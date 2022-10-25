@@ -1,0 +1,32 @@
+.clients {
+}
+
+.clients__item {
+}
+
+.clients__link {
+  @include flex-centered();
+  height: 92px;
+  width: 170px;
+
+  color: $PrimaryBorderColor;
+
+  border: 1px solid $PrimaryBorderColor;
+  border-radius: 4px;
+  transition: border-color $TransitionFunc, color $TransitionFunc;
+
+  &:hover,
+  &:focus {
+    color: $PrimaryAccentColor;
+    border-color: $PrimaryAccentColor;
+  }
+}
+
+.clients__icon {
+  display: block;
+  padding: 16px 32px;
+  height: 100%;
+  width: 100%;
+
+  fill: currentColor;
+}

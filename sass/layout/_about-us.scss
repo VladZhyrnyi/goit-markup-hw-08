@@ -1,0 +1,29 @@
+.about-us {
+  display: flex;
+  gap: 30px;
+}
+
+.about-us__item {
+  position: relative;
+}
+
+.about-us__label {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  display: block;
+  height: 70px;
+  width: 100%;
+  padding: 27px 0;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  background-color: rgba(47, 48, 58, 0.8);
+  color: $TertiaryTextColor;
+}

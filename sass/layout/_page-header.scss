@@ -1,0 +1,83 @@
+.page-header {
+  border-bottom: 1px solid #ececec;
+
+  .container {
+    display: flex;
+  }
+}
+
+.page-header__nav {
+  @include flex-centered();
+
+  .logo {
+    margin-right: 90px;
+  }
+}
+
+%link-font-style {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.nav {
+  display: flex;
+  gap: 50px;
+}
+
+.nav__link {
+  display: block;
+  padding: 32px 0;
+
+  @extend %link-font-style;
+
+  color: $SecondaryTextColor;
+  transition: color $TransitionFunc;
+
+  &--current {
+    color: $PrimaryAccentColor;
+    position: relative;
+
+    &::after {
+      content: "";
+      height: 4px;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+
+      border-radius: 2px;
+
+      background-color: $PrimaryAccentColor;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    color: $PrimaryAccentColor;
+  }
+}
+
+.contacts {
+  @include flex-centered();
+  gap: 50px;
+  margin-left: auto;
+}
+
+.contacts__link {
+  @include flex-centered();
+  gap: 10px;
+
+  @extend %link-font-style;
+
+  &:hover,
+  &:focus {
+    color: $PrimaryAccentColor;
+  }
+}
+
+.contacts__icon {
+  @include flex-centered();
+  fill: currentColor;
+}

@@ -1,0 +1,35 @@
+.section {
+  padding: 94px 0;
+}
+
+.section__title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $SecondaryTextColor;
+}
+
+.section__subtitle {
+  font-weight: 700;
+  font-size: inherit;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $SecondaryTextColor;
+}
+
+.section__text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.section__list {
+  display: flex;
+  gap: 30px;
+}

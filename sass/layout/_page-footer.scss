@@ -1,0 +1,68 @@
+.page-footer {
+  background-color: $SecondaryBackground;
+  padding: 60px 0;
+}
+
+.page-footer__container {
+  display: flex;
+  align-items: baseline;
+}
+
+.page-footer__socials {
+  margin-left: 70px;
+}
+
+.page-footer__label {
+  display: block;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: $TertiaryTextColor;
+}
+
+.company-info {
+}
+
+.company-info__logo {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.company-info__address {
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.company-info__list {
+}
+
+.company-info__item {
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+.company-info__link {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+
+  transition: color $TransitionFunc;
+
+  &--white {
+    color: $TertiaryTextColor;
+  }
+
+  &:hover,
+  &:focus {
+    color: $PrimaryAccentColor;
+  }
+}
