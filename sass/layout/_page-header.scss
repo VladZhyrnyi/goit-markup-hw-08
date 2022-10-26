@@ -3,15 +3,16 @@
 
   .container {
     display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    margin-right: 90px;
   }
 }
 
 .page-header__nav {
   @include flex-centered();
-
-  .logo {
-    margin-right: 90px;
-  }
 }
 
 %link-font-style {
