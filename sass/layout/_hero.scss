@@ -1,7 +1,7 @@
 .hero {
   max-width: 1600px;
   margin: 0 auto;
-  padding: 200px;
+  padding: 118px 0;
   background-color: var(--footer-background);
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
@@ -13,21 +13,31 @@
   background-position: center;
 
   text-align: center;
+
+  @media screen and (min-width: $DesktopMinWidth) {
+    padding: 200px 0;
+  }
 }
 
 .hero__title {
   margin: 0 auto;
   margin-bottom: 30px;
-  max-width: 696px;
+  max-width: 360px;
 
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: calc(42 / 26);
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
   color: $TertiaryTextColor;
+
+  @media screen and (min-width: $DesktopMinWidth) {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: calc(60 / 44);
+  }
 }
 
 .hero__button {

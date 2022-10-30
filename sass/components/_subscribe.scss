@@ -1,19 +1,32 @@
 .subscribe {
-  width: 570px;
-  margin-left: auto;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+
+  @media screen and (min-width: $TabletMinWidth) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: $DesktopMinWidth) {
+    width: calc((100% - 30px) / 2);
+    text-align: start;
+  }
 }
 
 .subscribe__form {
   display: flex;
-  justify-content: space-between;
-}
+  flex-direction: column;
+  gap: 20px;
 
-.subscribe__input-group {
+  @media screen and (min-width: $DesktopMinWidth) {
+    flex-direction: row;
+    width: 100%;
+  }
 }
 
 .subscribe__input {
   display: block;
-  width: 358px;
+  width: 100%;
   height: 50px;
   padding-left: 16px;
 
@@ -27,9 +40,21 @@
   &:focus {
     outline: none;
   }
+
+  &::placeholder {
+    z-index: 0;
+  }
+
+  @media screen and (min-width: $DesktopMinWidth) {
+    width: 358px;
+  }
 }
 
 .subscribe__button {
+  margin: 0 auto;
   padding: 10px 28px;
-  margin-left: 12px;
+
+  @media screen and (min-width: $DesktopMinWidth) {
+    margin: 0;
+  }
 }

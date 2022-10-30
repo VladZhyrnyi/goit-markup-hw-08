@@ -10,21 +10,32 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body>
     <header class="page-header">
-      <div class="container">
+      <div class="container page-header__container">
         <a href="./index.html" class="logo page-header__logo" lang="en">
           Web<span class="logo__secondary-text">Studio</span>
         </a>
-        <nav class="page-header__nav">
+        <button type="button" class="page-header__toggle js-open-menu">
+          <svg class="page-header__open-icon" width="40px" height="40px">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <div class="page-header__menu">
           <ul class="nav">
             <li class="nav__item">
-              <a href="./index.html" class="nav__link nav__link--current"
-                >Студія</a
-              >
+              <a href="./index.html" class="nav__link nav__link--current">
+                Студія
+              </a>
             </li>
             <li class="nav__item">
               <a href="./portfolio.html" class="nav__link">Портфоліо</a>
@@ -33,35 +44,37 @@
               <a href="#" class="nav__link">Контакти</a>
             </li>
           </ul>
-        </nav>
-        <ul class="contacts">
-          <li class="contacts__item">
-            <a href="mailto:info@devstudio.com" class="contacts__link">
-              <svg class="contacts__icon" height="16px" width="16px">
-                <use href="./images/icons.svg#icon-mail"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="contacts__item">
-            <a href="tel:+380961111111" class="contacts__link">
-              <svg class="contacts__icon" height="16px" width="16px">
-                <use href="./images/icons.svg#icon-phone"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
+          <ul class="contacts">
+            <li class="contacts__item">
+              <a href="mailto:info@devstudio.com" class="contacts__link">
+                <svg class="contacts__icon" height="16px" width="16px">
+                  <use href="./images/icons.svg#icon-mail"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="contacts__item">
+              <a href="tel:+380961111111" class="contacts__link">
+                <svg class="contacts__icon" height="16px" width="16px">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
     <main>
       <!-- Hero section -->
       <section class="hero">
-        <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
-        <button type="button" class="button hero__button" data-modal-open>
-          Замовити послугу
-        </button>
+        <div class="container">
+          <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
+          <button type="button" class="button hero__button" data-modal-open>
+            Замовити послугу
+          </button>
+        </div>
       </section>
       <!-- Features section -->
       <section class="section features">
@@ -123,10 +136,10 @@
         </div>
       </section>
       <!-- About-us section -->
-      <section class="section">
+      <section class="section about-us">
         <div class="container">
           <h2 class="section__title">Чим ми займаємося</h2>
-          <ul class="about-us">
+          <ul class="about-us__list">
             <li class="about-us__item">
               <img
                 src="./images/box1.jpg"
@@ -334,7 +347,7 @@
       <section class="section clients">
         <div class="container">
           <h2 class="section__title">Постійні клієнти</h2>
-          <ul class="section__list">
+          <ul class="section__list clients__list">
             <li class="clients__item">
               <a href="" class="clients__link">
                 <svg class="clients__icon">
@@ -415,7 +428,7 @@
         </div>
         <div class="page-footer__socials">
           <b class="page-footer__label">Приєднуйтесь</b>
-          <ul class="social-list">
+          <ul class="social-list page-footer__social-list">
             <li class="social-list__item">
               <a
                 href=""
@@ -475,6 +488,57 @@
       </div>
     </footer>
 
+    <!-- Mobile menu -->
+
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+        <button type="button" class="menu__toggle js-close-menu">
+          <svg class="menu__close-icon" width="40px" height="40px">
+            <use href="./images/icons.svg#icon-cross"></use>
+          </svg>
+        </button>
+        <ul class="mobile-nav">
+          <li class="mobile-nav__item">
+            <a href="./index.html" class="mobile-nav__link mobile-nav__link--current">
+              Студія
+            </a>
+          </li>
+          <li class="mobile-nav__item">
+            <a href="./portfolio.html" class="mobile-nav__link">Портфоліо</a>
+          </li>
+          <li class="mobile-nav__item">
+            <a href="#" class="mobile-nav__link">Контакти</a>
+          </li>
+        </ul>
+        <div class="mobile-menu__contact-wrapper">
+          <ul class="mobile-contacts">
+          <li class="mobile-contacts__item">
+            <a href="tel:+380961111111" class="mobile-contacts__link mobile-contacts__link--focused">
+              +38 096 111 11 11
+            </a>
+          </li>
+          <li class="mobile-contacts__item">
+            <a href="mailto:info@devstudio.com" class="mobile-contacts__link">
+              info@devstudio.com
+            </a>
+          </li>
+        </ul>
+        <ul class="menu-socials">
+          <li class="menu-socials__item">
+            <a href="#" class="menu-socials__link">Instagram</a>
+          </li>
+          <li class="menu-socials__item">
+            <a href="#" class="menu-socials__link">Twitter</a>
+          </li>
+          <li class="menu-socials__item">
+            <a href="#" class="menu-socials__link">Facebook</a>
+          </li>
+          <li class="menu-socials__item">
+            <a href="#" class="menu-socials__link">LinkedIn</a>
+          </li>
+        </ul>
+        </div>
+    </div>
+
     <!-- Modal -->
 
     <div class="backdrop is-hidden" data-modal>
@@ -531,6 +595,14 @@
         </form>
       </div>
     </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
 
     <script src="./js/modal.js"></script>
   </body>

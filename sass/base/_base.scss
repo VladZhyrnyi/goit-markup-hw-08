@@ -1,8 +1,9 @@
-@import './modern-normalize';
 @import './vars';
 @import './reset-styles';
 
 body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
+
+  color: $PrimaryTextColor;
 }

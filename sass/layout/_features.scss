@@ -1,18 +1,30 @@
-.features {
-    padding-bottom: 0;
-}
+.features {}
 
 .features__list {
     display: flex;
+    flex-direction: column;
     gap: 30px;
+
+    @media screen and (min-width: $TabletMinWidth) {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 }
 
 .features__item {
+    width: 100%;
+    @media screen and (min-width: $TabletMinWidth) {
+        width: calc((100% - 30px) / 2);
+    }
+
+    @media screen and (min-width: $DesktopMinWidth) {
     width: calc((100% - 90px) / 4);
+    }
 }
 
 .features__icon-wrapper {
     @include flex-centered ();
+    width: 100%;
     padding: 25px;
     margin-bottom: 30px;
 
@@ -27,4 +39,5 @@
 
 .features__title {
     margin-bottom: 10px;
+    text-align: center;
 }

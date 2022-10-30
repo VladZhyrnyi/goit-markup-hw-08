@@ -1,25 +1,57 @@
 .page-header {
   border-bottom: 1px solid #ececec;
+}
 
-  .container {
+.page-header__container {
     display: flex;
+    justify-content: space-between;
     align-items: center;
+}
+
+.page-header__logo {
+  @media screen and (min-width: $TabletMinWidth) {
+    margin-right: 87px;
   }
-  
-  .logo {
+
+  @media screen and (min-width: $DesktopMinWidth) {
     margin-right: 90px;
   }
 }
 
-.page-header__nav {
+.page-header__toggle {
+  min-height: 40px;
+  min-width: 40px;
   @include flex-centered();
+  margin: 10px;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+
+  &:hover, &:focus {
+    color: $PrimaryAccentColor;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
-%link-font-style {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+.page-header__open-icon {
+  fill: currentColor;
+}
+
+.page-header__menu {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
 }
 
 .nav {
@@ -27,11 +59,18 @@
   gap: 50px;
 }
 
+.nav__item {
+}
+
 .nav__link {
   display: block;
+  width: 100%;
   padding: 32px 0;
 
-  @extend %link-font-style;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
 
   color: $SecondaryTextColor;
   transition: color $TransitionFunc;
@@ -47,9 +86,7 @@
       position: absolute;
       bottom: 0;
       right: 0;
-
       border-radius: 2px;
-
       background-color: $PrimaryAccentColor;
     }
   }
@@ -61,16 +98,23 @@
 }
 
 .contacts {
-  @include flex-centered();
-  gap: 50px;
-  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
+}
+
+.contacts__item {
 }
 
 .contacts__link {
-  @include flex-centered();
+  display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 10px;
-
-  @extend %link-font-style;
 
   &:hover,
   &:focus {
@@ -79,6 +123,8 @@
 }
 
 .contacts__icon {
-  @include flex-centered();
+  display: flex;
+  justify-content: center;
+  align-items: center;
   fill: currentColor;
 }

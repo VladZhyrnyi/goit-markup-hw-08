@@ -1,4 +1,13 @@
 .about-us {
+  display: none;
+  padding-top: 0;
+
+  @media screen and (min-width: $DesktopMinWidth) {
+    display: block;
+    }
+}
+
+.about-us__list {
   display: flex;
   gap: 30px;
 }

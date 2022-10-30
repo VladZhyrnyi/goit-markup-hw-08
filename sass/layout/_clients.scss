@@ -1,13 +1,28 @@
 .clients {
 }
 
+.clients__list {
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .clients__item {
+  width: calc((100% - 30px) / 2);
+
+  @media screen and (min-width: $TabletMinWidth) {
+    width: calc((100% - 60px) / 3);
+  }
+
+  @media screen and (min-width: $DesktopMinWidth) {
+    width: calc((100% - 150px) / 6);
+  }
 }
 
 .clients__link {
   @include flex-centered();
+
   height: 92px;
-  width: 170px;
 
   color: $PrimaryBorderColor;
 

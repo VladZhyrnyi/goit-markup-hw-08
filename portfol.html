@@ -4,65 +4,54 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Головна</title>
+    <title>Портфоліо</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body>
     <header class="page-header">
-      <div class="container page-header__container">
-        <a href="./index.html" class="logo page-header__logo" lang="en">
-          Web<span class="logo__secondary-text">Studio</span>
-        </a>
-        <button type="button" class="page-header__toggle js-open-menu">
-          <svg class="page-header__open-icon" width="40px" height="40px">
-            <use href="./images/icons.svg#icon-menu"></use>
-          </svg>
-        </button>
-        <div class="page-header__menu">
+      <div class="container">
+        <nav class="page-header__nav">
+          <a href="./index.html" class="logo" lang="en">
+            Web<span class="logo__secondary-text">Studio</span>
+          </a>
           <ul class="nav">
             <li class="nav__item">
-              <a href="./index.html" class="nav__link">
-                Студія
-              </a>
+              <a href="./index.html" class="nav__link">Студія</a>
             </li>
             <li class="nav__item">
-              <a href="./portfolio.html" class="nav__link nav__link--current">Портфоліо</a>
+              <a href="./portfolio.html" class="nav__link nav__link--current">
+                Портфоліо
+              </a>
             </li>
             <li class="nav__item">
               <a href="#" class="nav__link">Контакти</a>
             </li>
           </ul>
-          <ul class="contacts">
-            <li class="contacts__item">
-              <a href="mailto:info@devstudio.com" class="contacts__link">
-                <svg class="contacts__icon" height="16px" width="16px">
-                  <use href="./images/icons.svg#icon-mail"></use>
-                </svg>
-                info@devstudio.com
-              </a>
-            </li>
-            <li class="contacts__item">
-              <a href="tel:+380961111111" class="contacts__link">
-                <svg class="contacts__icon" height="16px" width="16px">
-                  <use href="./images/icons.svg#icon-phone"></use>
-                </svg>
-                +38 096 111 11 11
-              </a>
-            </li>
-          </ul>
-        </div>
+        </nav>
+        <ul class="contacts">
+          <li class="contacts__item">
+            <a href="mailto:info@devstudio.com" class="contacts__link">
+              <svg class="contacts__icon" height="16px" width="16px">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="contacts__item">
+            <a href="tel:+380961111111" class="contacts__link">
+              <svg class="contacts__icon" height="16px" width="16px">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
       </div>
     </header>
 
@@ -72,7 +61,7 @@
           <h1 class="visually-hidden">Портфоліо</h1>
           <form class="filter">
             <label>
-              <input type="radio" name="filter" class="filter__input" checked />
+              <input type="radio" name="filter" class="filter__input" />
               <span class="button filter__label">Усі</span>
             </label>
             <label>
@@ -100,8 +89,8 @@
                     src="./images/portfolio/img_portfolio_1-min.jpg"
                     alt="Компʼютер з веб-сайтом"
                     width="370"
-                    height="294"
-                    class="product__image" />
+                    height="294" 
+                    class="product_image"/>
                   <p class="product__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -144,8 +133,7 @@
                     src="./images/portfolio/img_portfolio_3-min.jpg"
                     alt="Логотип рибного ресторану"
                     width="370"
-                    height="294" 
-                    class="product__image" />
+                    height="294" />
                   <p class="product__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -153,9 +141,7 @@
                   </p>
                 </div>
                 <div class="product__footer">
-                  <h2 class="product__title">
-                    Ресторан <span lang="en">Seafood</span>
-                  </h2>
+                  <h2 class="product__title">Ресторан <span lang="en">Seafood</span></h2>
                   <p class="product__category">Додаток</p>
                 </div>
               </a>
@@ -167,8 +153,7 @@
                     src="./images/portfolio/img_portfolio_4-min.jpg"
                     alt="Навушники"
                     width="370"
-                    height="294"
-                    class="product__image" />
+                    height="294" />
                   <p class="product__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -176,9 +161,7 @@
                   </p>
                 </div>
                 <div class="product__footer">
-                  <h2 class="product__title">
-                    Проєкт <span lang="en">Prime</span>
-                  </h2>
+                  <h2 class="product__title">Проєкт <span lang="en">Prime</span></h2>
                   <p class="product__category">Маркетинг</p>
                 </div>
               </a>
@@ -190,8 +173,7 @@
                     src="./images/portfolio/img_portfolio_5-min.jpg"
                     alt="Дві паперові коробки"
                     width="370"
-                    height="294"
-                    class="product__image" />
+                    height="294" />
                   <p class="product__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -199,9 +181,7 @@
                   </p>
                 </div>
                 <div class="product__footer">
-                  <h2 class="product__title">
-                    Проєкт <span lang="en">Boxes</span>
-                  </h2>
+                  <h2 class="product__title">Проєкт <span lang="en">Boxes</span></h2>
                   <p class="product__category">Додаток</p>
                 </div>
               </a>
@@ -213,8 +193,7 @@
                     src="./images/portfolio/img_portfolio_6-min.jpg"
                     alt="Компʼютер з веб-сайтом"
                     width="370"
-                    height="294"
-                    class="product__image" />
+                    height="294" />
                   <p class="product__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -222,9 +201,7 @@
                   </p>
                 </div>
                 <div class="product__footer">
-                  <h2 class="product__title" lang="en">
-                    Inspiration has no Borders
-                  </h2>
+                  <h2 class="product__title" lang="en">Inspiration has no Borders</h2>
                   <p class="product__category">Веб-сайт</p>
                 </div>
               </a>
@@ -236,8 +213,7 @@
                     src="./images/portfolio/img_portfolio_7-min.jpg"
                     alt="Книга з ілюстраціями"
                     width="370"
-                    height="294"
-                    class="product__image" />
+                    height="294" />
                   <p class="product__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -260,8 +236,7 @@
                     src="./images/portfolio/img_portfolio_8-min.jpg"
                     alt="Бірка з логотипом"
                     width="370"
-                    height="294"
-                    class="product__image" />
+                    height="294" />
                   <p class="product__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -269,9 +244,7 @@
                   </p>
                 </div>
                 <div class="product__footer">
-                  <h2 class="product__title">
-                    Проєкт <span lang="en">LAB</span>
-                  </h2>
+                  <h2 class="product__title">Проєкт <span lang="en">LAB</span></h2>
                   <p class="product__category">Маркетинг</p>
                 </div>
               </a>
@@ -283,8 +256,7 @@
                     src="./images/portfolio/img_portfolio_9-min.jpg"
                     alt="Компʼютер з додатком"
                     width="370"
-                    height="294"
-                    class="product__image" />
+                    height="294" />
                   <p class="product__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -335,7 +307,7 @@
         </div>
         <div class="page-footer__socials">
           <b class="page-footer__label">Приєднуйтесь</b>
-          <ul class="social-list page-footer__social-list">
+          <ul class="social-list">
             <li class="social-list__item">
               <a
                 href=""
@@ -394,126 +366,5 @@
         </div>
       </div>
     </footer>
-
-    <!-- Mobile menu -->
-
-    <div class="mobile-menu js-menu-container" id="mobile-menu">
-      <button type="button" class="menu__toggle js-close-menu">
-        <svg class="menu__close-icon" width="40px" height="40px">
-          <use href="./images/icons.svg#icon-cross"></use>
-        </svg>
-      </button>
-      <ul class="mobile-nav">
-        <li class="mobile-nav__item">
-          <a
-            href="./index.html"
-            class="mobile-nav__link">
-            Студія
-          </a>
-        </li>
-        <li class="mobile-nav__item">
-          <a href="./portfolio.html" class="mobile-nav__link mobile-nav__link--current">Портфоліо</a>
-        </li>
-        <li class="mobile-nav__item">
-          <a href="#" class="mobile-nav__link">Контакти</a>
-        </li>
-      </ul>
-      <div class="mobile-menu__contact-wrapper">
-        <ul class="mobile-contacts">
-          <li class="mobile-contacts__item">
-            <a
-              href="tel:+380961111111"
-              class="mobile-contacts__link mobile-contacts__link--focused">
-              +38 096 111 11 11
-            </a>
-          </li>
-          <li class="mobile-contacts__item">
-            <a href="mailto:info@devstudio.com" class="mobile-contacts__link">
-              info@devstudio.com
-            </a>
-          </li>
-        </ul>
-        <ul class="menu-socials">
-          <li class="menu-socials__item">
-            <a href="#" class="menu-socials__link">Instagram</a>
-          </li>
-          <li class="menu-socials__item">
-            <a href="#" class="menu-socials__link">Twitter</a>
-          </li>
-          <li class="menu-socials__item">
-            <a href="#" class="menu-socials__link">Facebook</a>
-          </li>
-          <li class="menu-socials__item">
-            <a href="#" class="menu-socials__link">LinkedIn</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Modal -->
-
-    <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <button type="button" class="modal__close-btn" data-modal-close>
-          <svg class="modal__close-icon">
-            <use href="./images/icons.svg#icon-close-cross"></use>
-          </svg>
-        </button>
-        <b class="modal__title">Залиште свої дані, ми вам передзвонимо</b>
-        <form class="form">
-          <label class="input-field">
-            <span class="input-field__label">Ім'я</span>
-            <input class="input-field__input" name="user" type="text" />
-            <svg class="input-field__icon">
-              <use href="./images/icons.svg#icon-form-person"></use>
-            </svg>
-          </label>
-          <label class="input-field">
-            <span class="input-field__label">Телефон</span>
-            <input class="input-field__input" name="tel" type="tel" />
-            <svg class="input-field__icon">
-              <use href="./images/icons.svg#icon-form-phone"></use>
-            </svg>
-          </label>
-          <label class="input-field">
-            <span class="input-field__label">Пошта</span>
-            <input class="input-field__input" name="mail" type="email" />
-            <svg class="input-field__icon">
-              <use href="./images/icons.svg#icon-form-email"></use>
-            </svg>
-          </label>
-          <label class="input-field input-comment">
-            <span class="input-comment__label">Коментар</span>
-            <textarea
-              class="input-comment__input"
-              name="comment"
-              type="textarea"
-              placeholder="Введіть текст"></textarea>
-          </label>
-          <label class="checkbox">
-            <input
-              class="checkbox__input"
-              type="checkbox"
-              name="policy"
-              value="true" />
-            <span class="checkbox__icon"></span>
-            <span class="checkbox__label"
-              >Погоджуюся з розсилкою та приймаю
-              <a class="checkbox__link" href="#">Умови договору</a>
-            </span>
-          </label>
-          <button class="button form__button" type="submit">Відправити</button>
-        </form>
-      </div>
-    </div>
-
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-      crossorigin="anonymous"></script>
-    <script defer src="js/mobile-menu.js"></script>
-
-    <script src="./js/modal.js"></script>
   </body>
 </html>

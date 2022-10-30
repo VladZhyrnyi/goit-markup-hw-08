@@ -77,10 +77,14 @@
   display: inline-block;
   width: 16px;
   height: 15px;
-  margin-left: 14px;
+  
 
   background-image: url(../images/checkbox-false.svg);
   transition: background-image $TransitionFunc;
+
+  @media screen and (min-width: $DesktopMinWidth) {
+    margin-left: 14px;
+  }
 
   .checkbox__input:checked + & {
     background-image: url(../images/checkbox-true.svg);
@@ -88,10 +92,17 @@
 }
 
 .checkbox__label {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
   margin-left: 7px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.03em;
+
+  @media screen and (min-width: $DesktopMinWidth) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 .checkbox__link {
   text-decoration: underline;

@@ -5,11 +5,33 @@
 
 .page-footer__container {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  row-gap: 60px;
+
+  @media screen and (min-width: $TabletMinWidth) {
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 30px;
+  }
+
+  @media screen and (min-width: $DesktopMinWidth) {
+    flex-wrap: nowrap;
+    align-items: baseline;
+  }
 }
 
 .page-footer__socials {
-  margin-left: 70px;
+  text-align: center;
+
+  @media screen and (min-width: $TabletMinWidth) {
+    width: calc((100% - 30px) / 2);
+  }
+
+  @media screen and (min-width: $DesktopMinWidth) {
+    width: calc((100% - 90px) / 4);
+    text-align: start;
+  }
 }
 
 .page-footer__label {
@@ -25,7 +47,23 @@
   color: $TertiaryTextColor;
 }
 
+.page-footer__social-list {
+  @media screen and (min-width: $DesktopMinWidth){
+      justify-content: start;
+  }
+}
+
 .company-info {
+  text-align: center;
+
+  @media screen and (min-width: $TabletMinWidth) {
+    width: calc((100% - 30px) / 2);
+  }
+
+  @media screen and (min-width: $DesktopMinWidth) {
+    width: calc((100% - 90px) / 4);
+    text-align: start;
+  }
 }
 
 .company-info__logo {
