@@ -11,7 +11,7 @@
   background-color: $TertiaryTextColor;
   z-index: 999;
 
-  transform: translateY(-100%);
+  transform: translateY(-150%);
   transition: transform 250ms $TransitionFunc;
 
   &.is-open {
