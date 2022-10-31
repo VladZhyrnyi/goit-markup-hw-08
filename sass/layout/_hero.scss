@@ -7,7 +7,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../../images/mobile-hero.webp);
+    url(../../images/mobile-hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -21,7 +21,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/mobile-hero@2x.webp);
+      url(../../images/mobile-hero@2x.jpg);
   }
 
   @media screen and (min-width: $TabletMinWidth) {
@@ -29,7 +29,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/tablet-hero.webp);
+      url(../../images/tablet-hero.jpg);
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -38,7 +38,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../../images/tablet-hero@2x.webp);
+        url(../../images/tablet-hero@2x.jpg);
     }
   }
 
@@ -48,7 +48,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/desktop-hero.webp);
+      url(../../images/desktop-hero.jpg);
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -57,7 +57,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../../images/desktop-hero@2x.webp);
+        url(../../images/desktop-hero@2x.jpg);
     }
   }
 }
